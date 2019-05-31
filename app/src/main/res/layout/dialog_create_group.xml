@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sagi.gambling.utilities.custom_ui.CircleImageView
+        android:id="@+id/imgGroupProfile"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_group" />
+
+    <TextView
+        android:text="0/10"
+        android:id="@+id/txtLength"
+         android:layout_marginLeft="10sp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/imgGroupProfile"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtGroupName"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:maxLength="10"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/imgGroupProfile"
+        android:hint="Enter your group name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgGroupProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Select minimum money standard"
+        android:textSize="15dp" />
+
+    <SeekBar
+        android:min="100"
+        android:id="@+id/seekBarStandart"
+        android:thumb="@drawable/dolar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgGroupProfile"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/txtEntryAmouny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seekBarStandart"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbPrivacyGroup"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@android:drawable/ic_menu_add"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rbPrivacyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarStandart"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbClosedGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Closed Group" />
+
+        <RadioButton
+            android:id="@+id/rbOpenGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Group" />
+
+    </RadioGroup>
+
+</RelativeLayout>

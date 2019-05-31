@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:background="@color/colorBackground"
+    tools:context=".fragments.GroupChatFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/txtDateCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:text="22/3/2019" />
+
+
+        <TextView
+            android:id="@+id/txtNumPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentTop="true"
+            android:text="30/250" />
+
+        <TextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+             android:textColor="@color/colorWhite" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDateCreated"
+            android:layout_marginHorizontal="10dp">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgGroupProfile">
+
+                <TextView
+                    android:id="@+id/txtGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorText"
+                    android:text="Name"
+                    android:textSize="30sp" />
+
+            </ScrollView>
+
+            <com.sagi.gambling.utilities.custom_ui.CircleImageView
+                android:id="@+id/imgGroupProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayoutTop"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:id="@+id/txtGroup1Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Group1"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="VS"
+                android:textColor="@color/colorText"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtGroup2Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Group2"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/cardview_shadow_start_color"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearlayoutBotomChat" />
+
+        <LinearLayout
+            android:id="@+id/linearlayoutBotomChat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.sagi.gambling.utilities.custom_ui.CircleImageView
+                android:id="@+id/imgSend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:rotation="180"
+                android:src="@drawable/ic_menu_send" />
+
+
+            <EditText
+                android:id="@+id/edtMessage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@drawable/shape_editext"
+                android:gravity="right|center_vertical"
+                android:hint="Enter new message"
+                android:textColor="@color/colorWhite"
+                android:imeOptions="actionSend"
+                android:padding="9dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

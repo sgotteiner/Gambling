@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/itemEdit"
+        android:visible="false"
+        android:title="Edit"
+        />
+
+    <item android:id="@+id/itemDelete"
+        android:visible="false"
+        android:title="Delete"/>
+
+    <!--<item android:id="@+id/itemShowGambles"-->
+        <!--android:title="Show Gambles" />-->
+
+    <item android:id="@+id/itemChat"
+        android:title="Chat" />
+
+    <item android:id="@+id/itemCreateGroup"
+        android:title="Create Group" />
+
+</menu>

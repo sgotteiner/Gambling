@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundItem">
+
+    <RelativeLayout
+        android:id="@+id/rlTopDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/txtTitleGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtVs"
+            android:width="200dp"
+            android:gravity="left|center_vertical"
+            android:text="Madrid"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtVs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:text=" vs "
+            android:textColor="@color/colorText"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtTitleGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/txtVs"
+            android:width="200dp"
+            android:gravity="right|center_vertical"
+            android:text="barchelona"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTopDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:text="My Description"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtRatio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Group1: 1.2"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtRatioTie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:text=""
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtRatio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:text="Group2: 1.23"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_margin="20dp"
+        android:max="100"
+        android:progress="50"
+        android:thumb="@drawable/dolar_icon" />
+
+    <TextView
+        android:id="@+id/txtMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarMoney"
+        android:layout_centerHorizontal="true"
+        android:text="1000$"
+        android:textColor="@color/colorText"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMoney"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_editext"
+            android:textColor="@color/colorWhite"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/shape_editext"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

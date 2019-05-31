@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="20dp">
+
+            <com.sagi.gambling.utilities.custom_ui.CircleImageView
+                android:id="@+id/imageViewClose"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-5dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Add game"
+                android:textColor="@color/colorText"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtGroup1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitle"
+                android:layout_marginRight="100dp"
+                android:hint="group 1 name"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/spnGroup1Name"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtTitle"
+                android:layout_alignParentRight="true" />
+
+            <Spinner
+                android:id="@+id/spnGroup2Name"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edtGroup1Name"
+                android:layout_alignParentRight="true" />
+
+            <EditText
+                android:id="@+id/edtGroup2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtGroup1Name"
+                android:layout_marginRight="100dp"
+                android:hint="group 2 name"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtGroup2Name"
+                android:layout_marginRight="100dp"
+                android:hint="Category"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/spnCategory"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/spnGroup2Name"
+                android:layout_alignParentRight="true" />
+
+            <EditText
+                android:id="@+id/edtDecription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtCategory"
+                android:layout_marginRight="100dp"
+                android:hint="Description"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtDecription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Chance first group 50 %"
+                android:textColor="#fff" />
+
+            <SeekBar
+                android:id="@+id/seekBarChance1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewStatus"
+                android:layout_margin="20dp"
+                android:max="100"
+                android:progress="50" />
+
+            <ImageView
+                android:id="@+id/imgGroup1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/seekBarChance1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:background="@android:drawable/ic_input_add"
+                android:gravity="bottom|center_horizontal"
+                android:text="Img group 1"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/txtHeaderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgGroup1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Date game"
+                android:textColor="@color/colorText"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtHeaderDate"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btnDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/shape_editext"
+                    android:text="date" />
+
+                <Button
+                    android:id="@+id/btnHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_editext"
+                    android:text="hour" />
+
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rgStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linearLayoutDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textColor="@color/colorText" />
+
+                <RadioButton
+                    android:id="@+id/rbProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="In progress"
+                    android:textColor="@color/colorText" />
+
+                <RadioButton
+                    android:id="@+id/rbEnded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ended"
+                    android:textColor="@color/colorText" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgGroup2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/seekBarChance1"
+                android:layout_alignParentRight="true"
+                android:background="@android:drawable/ic_input_add"
+                android:gravity="bottom|center_horizontal"
+                android:text="Img group 2"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/btnAddGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rgStatus"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/shape_editext"
+                android:text="Add Game" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundItem">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="1/05/2019 20:46"
+        android:textColor="#fff" />
+
+    <RelativeLayout
+        android:id="@+id/rlTopDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/txtTitleGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtVs"
+            android:width="200dp"
+            android:gravity="left|center_vertical"
+            android:text="Madrid"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtVs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:text=" vs "
+            android:textColor="@color/colorText"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtTitleGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/txtVs"
+            android:width="200dp"
+            android:gravity="right|center_vertical"
+            android:text="Barchelona"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTopDialog">
+
+        <com.sagi.gambling.utilities.custom_ui.CircleImageView
+            android:id="@+id/imgGroup1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true" />
+
+        <com.sagi.gambling.utilities.custom_ui.CircleImageView
+            android:id="@+id/imgGroup2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/imgGroup2"
+            android:layout_toRightOf="@+id/imgGroup1"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="My Description"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtRatio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Group1: 1.2"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtRatioTie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="10dp"
+             android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtRatio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/line1"
+            android:layout_alignEnd="@+id/line1"
+            android:layout_alignRight="@+id/line1"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Group2: 1.23"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtMyStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="#037003"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/txtProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorText"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtMyGamble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Your Gamble was 40"
+        android:textColor="@color/colorText"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

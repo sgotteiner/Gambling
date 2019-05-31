@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "875526334723",
+    "firebase_url": "https://gambling-c00ad.firebaseio.com",
+    "project_id": "gambling-c00ad",
+    "storage_bucket": "gambling-c00ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875526334723:android:67e1126ad2790d5b",
+        "android_client_info": {
+          "package_name": "com.sagi.gambling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875526334723-4gbrt4jfe9rfkipppgi3kk0gkd4vg9a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBvHwcGVH2tsNULqOmSCFN3cQOOHh73l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875526334723-4gbrt4jfe9rfkipppgi3kk0gkd4vg9a0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875526334723:android:e7c70a7a0a296f10",
+        "android_client_info": {
+          "package_name": "com.sagi_apps.gambling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875526334723-8g54h8f9hpu8eq40k6n0f75glevrulqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sagi_apps.gambling",
+            "certificate_hash": "ad717449d804553560c31be1c57122acb52a6bae"
+          }
+        },
+        {
+          "client_id": "875526334723-4gbrt4jfe9rfkipppgi3kk0gkd4vg9a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBvHwcGVH2tsNULqOmSCFN3cQOOHh73l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875526334723-4gbrt4jfe9rfkipppgi3kk0gkd4vg9a0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

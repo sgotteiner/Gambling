@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorBackgroundItem">
+
+    <com.sagi.gambling.utilities.custom_ui.CircleImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/more" />
+
+
+    <TextView
+        android:id="@+id/txtGroupGamble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/relativeLayoutButtons"
+        android:layout_toRightOf="@+id/line1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Text test"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtGroupName"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="11">
+
+            <TextView
+                android:id="@+id/txtRatio1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Group1: 1.2"
+                android:textColor="@color/colorWhite"
+                android:textSize="7sp" />
+
+            <TextView
+                android:id="@+id/txtRatioTie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="7sp" />
+
+            <TextView
+                android:id="@+id/txtRatio2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Group2: 1.23"
+                android:textColor="@color/colorWhite"
+                android:textSize="7sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.sagi.gambling.utilities.custom_ui.CircleImageView
+            android:id="@+id/imgGroupProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/txtNumPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgGroupProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="120/256"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btnJoinGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginVertical="4dp"
+            android:background="#bf2fe744"
+            android:text="join" />
+
+        <Button
+            android:id="@+id/btnIgnoreGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnJoinGroup"
+            android:layout_marginVertical="4dp"
+            android:background="#bff51f1f"
+            android:text="ignore" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLeaveGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btnLeaveGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginVertical="4dp"
+            android:background="#bff7953f"
+            android:text="Leave Group" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtOpenDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="120/256"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtStatusGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:text="private"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/you_won"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtGroup1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="group1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtGroup2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="group2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textColor="@color/colorText"
+        android:id="@+id/txtWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGroup1Name"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="12"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorText"
+        android:id="@+id/txtMoney"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWinner"
+        android:layout_centerHorizontal="true"
+        android:text="12"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_editext"
+        android:text="Close"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

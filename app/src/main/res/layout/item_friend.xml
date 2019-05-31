@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorBackgroundItem">
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageViewProfile"
+        android:text="Daniel"
+        android:textSize="18sp" />
+
+
+    <com.sagi.gambling.utilities.custom_ui.CircleImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:src="@drawable/profile" />
+
+    <Button
+        android:id="@+id/btnAddFriend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/ic_menu_add" />
+</RelativeLayout>

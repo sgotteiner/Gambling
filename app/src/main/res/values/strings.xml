@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gambling</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_won"><u>You Won</u></string>
+    <string name="you_lose"><u>You Lose</u></string>
+</resources>
