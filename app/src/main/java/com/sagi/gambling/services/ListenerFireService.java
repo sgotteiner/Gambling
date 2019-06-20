@@ -89,9 +89,6 @@ public class ListenerFireService extends Service {
         intent.putExtra(GeneralConstants.REQUEST_SCREEN_KEY, true);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
-//        bigText.bigText(title);
-//        bigText.setBigContentTitle(title);
-//        bigText.setSummaryText("Text in detail");
         mBuilder.setContentIntent(pendingIntent);
         mBuilder.setSmallIcon(R.drawable.logo_not_free);
         mBuilder.setContentTitle(title);
