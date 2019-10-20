@@ -173,6 +173,7 @@ public class HomePageFragment extends Fragment implements AdapterGames.CallBackA
             }
         });
     }
+
     private void pickGroupProfileImage() {
         Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
         photoPickerIntent.setType("image/*");
@@ -208,8 +209,6 @@ public class HomePageFragment extends Fragment implements AdapterGames.CallBackA
             bitmapGroupProfile = ImageUtils.scaleDown(bitmapGroupProfile, 200, false);
         }
     }
-
-
 
     private void loadCategoriesToFilter() {
         myRef.child(FireBaseConstant.NAME_CATEGORIES_TABLE).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -275,7 +274,6 @@ public class HomePageFragment extends Fragment implements AdapterGames.CallBackA
         adapterGames.notifyDataSetChanged();
     }
 
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -294,9 +292,6 @@ public class HomePageFragment extends Fragment implements AdapterGames.CallBackA
         mListener.registerEventFromMain(null);
         mListener = null;
     }
-
-
-
 
     @Override
     public void insertGambleToFirebase(Gamble gamble) {
@@ -454,7 +449,6 @@ public class HomePageFragment extends Fragment implements AdapterGames.CallBackA
             }
         }
     }
-
 
     public interface OnFragmentInteractionListener {
         void registerEventFromMain(IHomepage iHomepage);

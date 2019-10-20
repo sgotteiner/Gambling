@@ -571,13 +571,10 @@ public class DialogGameFragment extends android.support.v4.app.DialogFragment im
             } else {
                 bitmapGroup2 = ImageUtils.handleImageGallery(uriImageGallery, getContext());
                 imgGroup2.setImageBitmap(bitmapGroup2);
-              bitmapGroup2 = ImageUtils.scaleDown(bitmapGroup2, 200, false);
+                bitmapGroup2 = ImageUtils.scaleDown(bitmapGroup2, 200, false);
                 isNewGroup2 = true;
             }
-
         }
-
-
     }
 
 
